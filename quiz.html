@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mock Quiz - Aurora Academy</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.svg" alt="Aurora Academy Logo" class="logo">
+        </div>
+        <nav>
+            <a href="#" onclick="toggleTab('scoring')">Exam Scoring Pattern</a>
+            <a href="#" onclick="toggleTab('scoreboard')">Exam Previous Scoreboard</a>
+            <a href="#" onclick="toggleTab('timetable')">Exam Timetable</a>
+            <a href="#" onclick="toggleTab('quiz')" class="active">Mock Quiz</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="quiz-section">
+            <div id="scoring" class="tab-content">
+                <h2>Exam Scoring Pattern</h2>
+                <p>Our exams are scored based on a weighted system:</p>
+                <ul>
+                    <li>Multiple Choice Questions (MCQs): 40% (10 points each)</li>
+                    <li>True/False Questions: 20% (10 points each)</li>
+                    <li>Subjective Questions: 30% (15 points each)</li>
+                    <li>File Upload: 10% (10 points)</li>
+                </ul>
+                <p>Scores are aggregated and converted to a percentage. A minimum of 60% is required to pass.</p>
+            </div>
+            <div id="scoreboard" class="tab-content">
+                <h2>Exam Previous Scoreboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Score (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tulika Thampi</td><td>92</td></tr>
+                        <tr><td>Mookambika Devi</td><td>89</td></tr>
+                        <tr><td>Pinks M.</td><td>87</td></tr>
+                        <tr><td>Ganesh Nair</td><td>85</td></tr>
+                        <tr><td>Narayani Thakur</td><td>84</td></tr>
+                        <tr><td>Dakshayani Amma</td><td>82</td></tr>
+                        <tr><td>Ganga Mani</td><td>80</td></tr>
+                        <tr><td>Kamakshi Amma</td><td>78</td></tr>
+                        <tr><td>Bhuvaneshwar Nair</td><td>76</td></tr>
+                        <tr><td>Rajeshwari B.</td><td>75</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="timetable" class="tab-content">
+                <h2>Exam Timetable</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>English</td><td>July 10, 2025</td><td>10:00 AM</td><td>Room A-101</td></tr>
+                        <tr><td>Math</td><td>July 12, 2025</td><td>2:00 PM</td><td>Room B-203</td></tr>
+                        <tr><td>IT</td><td>July 14, 2025</td><td>9:00 AM</td><td>Room C-305</td></tr>
+                        <tr><td>History</td><td>July 15, 2025</td><td>2:00 AM</td><td>Room B-216</td></tr>
+                        <tr><td>Geography</td><td>July 16, 2025</td><td>10:00 AM</td><td>Room B-301</td></tr>
+                        <tr><td>Psycology</td><td>July 17, 2025</td><td>2:00 AM</td><td>Room A-146</td></tr>
+                    </tbody>
+                </table>
+                <p><strong>Note:</strong> Please arrive 15 minutes early to ensure a smooth start.</p>
+            </div>
+            <div id="quiz" class="tab-content active">
+                <h2>Mock Quiz Questions</h2>
+                <form id="quizForm">
+                    <!-- MCQ (4 options) -->
+                    <div class="question">
+                        <p>1. What is the primary language used in web development?</p>
+                        <label><input type="radio" name="q1" value="a"> HTML</label>
+                        <label><input type="radio" name="q1" value="b"> Python</label>
+                        <label><input type="radio" name="q1" value="c"> Java</label>
+                        <label><input type="radio" name="q1" value="d"> C++</label>
+                    </div>
+                    <!-- MCQ (3 options) -->
+                    <div class="question">
+                        <p>2. Which CSS property controls text size?</p>
+                        <label><input type="radio" name="q2" value="a"> font-size</label>
+                        <label><input type="radio" name="q2" value="b"> text-style</label>
+                        <label><input type="radio" name="q2" value="c"> font-weight</label>
+                    </div>
+                    <!-- True/False -->
+                    <div class="question">
+                        <p>3. JavaScript is used only for front-end development.</p>
+                        <label><input type="radio" name="q3" value="true"> True</label>
+                        <label><input type="radio" name="q3" value="false"> False</label>
+                    </div>
+                    <!-- True/False -->
+                    <div class="question">
+                        <p>4. CSS Grid is older than Flexbox.</p>
+                        <label><input type="radio" name="q4" value="true"> True</label>
+                        <label><input type="radio" name="q4" value="false"> False</label>
+                    </div>
+                    <!-- Subjective (Short Answer) -->
+                    <div class="question">
+                        <p>5. Describe one benefit of using media queries in CSS.</p>
+                        <textarea name="q5" rows="4" placeholder="Type your answer here"></textarea>
+                    </div>
+                    <!-- Subjective (Long Answer) -->
+                    <div class="question">
+                        <p>6. Explain how APIs enhance web applications.</p>
+                        <textarea name="q6" rows="6" placeholder="Type your answer here"></textarea>
+                    </div>
+                    <!-- MCQ (4 options) -->
+                    <div class="question">
+                        <p>7. Which HTML tag creates a hyperlink?</p>
+                        <label><input type="radio" name="q7" value="a"> &lt;div&gt;</label>
+                        <label><input type="radio" name="q7" value="b"> &lt;a&gt;</label>
+                        <label><input type="radio" name="q7" value="c"> &lt;link&gt;</label>
+                        <label><input type="radio" name="q7" value="d"> &lt;href&gt;</label>
+                    </div>
+                    <!-- True/False -->
+                    <div class="question">
+                        <p>8. Python can be used for web development.</p>
+                        <label><input type="radio" name="q8" value="true"> True</label>
+                        <label><input type="radio" name="q8" value="false"> False</label>
+                    </div>
+                    <!-- Upload -->
+                    <div class="question">
+                        <p>9. Upload a file containing script for a static website:  </p>
+                        <input type="file" name="q9" accept=".html">
+                    </div>
+                    <!-- Subjective (Short Answer) -->
+                    <div class="question">
+                        <p>10. What is one use case for JavaScript in web development?</p>
+                        <textarea name="q10" rows="4" placeholder="Type your answer here"></textarea>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+                </form>
+            </div>
+        </section>
+        <div id="quizResult"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact Aurora Academy</p>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

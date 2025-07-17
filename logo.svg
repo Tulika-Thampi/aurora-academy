@@ -1,0 +1,7 @@
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="40" r="35" fill="#1E40AF"/>
+    <path d="M60 15C47 15 37 25 37 40C37 55 47 65 60 65C73 65 83 55 83 40" fill="#7C3AED"/>
+    <circle cx="60" cy="25" r="8" fill="#EC4899"/>
+    <path d="M60 5L65 17L77 17L67 25L72 37L60 29L48 37L53 25L43 17L55 17Z" fill="#FFFFFF"/>
+    <text x="60" y="100" font-family="Inter, sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle">Aurora Academy</text>
+</svg>
